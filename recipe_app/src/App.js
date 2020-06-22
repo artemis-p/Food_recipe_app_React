@@ -8,6 +8,7 @@ const App = () => {
 
   const [recipes, setRecipes] = useState([]); // emtpy array for the recipes
   const [search, setSearch] = useState(""); // empty string for the search
+  const [query, setQuery] = useState("chicken"); // I want to fetch the data only after I've hit the search button - links to line 25
 
   //const [counter, setCounter] = useState(0);
 
@@ -16,12 +17,12 @@ const App = () => {
   // }, []); // adding an empty set of squared brackets helps us run tge request only once and not every time that we click on the counter. If we add a value, eg counter then this is going to fetch data every time we run the counter
 
   useEffect(() => {
-    getRecipes();
-  }, []);
+    getRecipes(); // we can get new recipes every time we eg. hit search, although every time we write a letter then it keeps on making requests to the below fetch link, so we don't want to fetch that much data
+  }, [query]); //this is going to run only when we click the submit button and this is the time that the 'chicken ' value is going to change, line 11
 
   const getRecipes = async () => {
     const response = await fetch(
-      `https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}`
+      `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
     );
     const data = await response.json(); //because we are requesting data from an external API we need to add "await" on every promise
     setRecipes(data.hits);
@@ -33,9 +34,14 @@ const App = () => {
     console.log(search);
   };
 
+  const getSearch = (e) => {
+    e.preventDefault(); // prevents the page from refreshing
+    setQuery(search); // after we finished typing and hit the search button we can get what we have written in the search = text, so our state can be equal to search
+  }; // adding an event so whenever I submit the form line 43 I want the getSearch to run
+
   return (
     <div className="App">
-      <form className="search-form">
+      <form onSubmit={getSearch} className="search-form">
         <input
           className="search-bar"
           type="text"
