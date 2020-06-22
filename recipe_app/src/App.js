@@ -31,12 +31,12 @@ const App = () => {
 
   const updateSearch = (e) => {
     setSearch(e.target.value);
-    console.log(search);
   };
 
   const getSearch = (e) => {
     e.preventDefault(); // prevents the page from refreshing
     setQuery(search); // after we finished typing and hit the search button we can get what we have written in the search = text, so our state can be equal to search
+    setSearch(""); // if you want the search field to reset after you've hit the search button
   }; // adding an event so whenever I submit the form line 43 I want the getSearch to run
 
   return (
@@ -58,6 +58,7 @@ const App = () => {
           title={recipe.recipe.label}
           calories={recipe.recipe.calories}
           image={recipe.recipe.image}
+          ingredients={recipe.recipe.ingredients} //in order to loop through the array going back to recipe.js and adding ingredients in there
         />
       ))}
       {/* <h1 onClick ={() => setCounter(counter + 1)}>{counter}</h1> */}
