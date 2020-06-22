@@ -52,15 +52,18 @@ const App = () => {
           Search
         </button>
       </form>
-      {recipes.map((recipe) => (
-        <Recipe
-          key={recipe.recipe.label} // this is making every prop unique,s o if we delete one recipe react doesn't have to re-render the rest of them
-          title={recipe.recipe.label}
-          calories={recipe.recipe.calories}
-          image={recipe.recipe.image}
-          ingredients={recipe.recipe.ingredients} //in order to loop through the array going back to recipe.js and adding ingredients in there
-        />
-      ))}
+      <div className="recipes">
+        {recipes.map((recipe) => (
+          <Recipe
+            key={recipe.recipe.label} // this is making every prop unique,so if we delete one recipe react doesn't have to re-render the rest of them
+            title={recipe.recipe.label}
+            calories={recipe.recipe.calories}
+            image={recipe.recipe.image}
+            ingredients={recipe.recipe.ingredients} //in order to loop through the array going back to recipe.js and adding ingredients in there
+            //healthLabels={recipe.recipe.healthLabels}
+          />
+        ))}
+      </div>
       {/* <h1 onClick ={() => setCounter(counter + 1)}>{counter}</h1> */}
     </div>
   );
