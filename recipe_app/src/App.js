@@ -6,7 +6,8 @@ const App = () => {
   const APP_ID = process.env.REACT_APP_APP_ID;
   const APP_KEY = process.env.REACT_APP_APP_KEY;
 
-  const [recipes, setRecipes] = useState([]);
+  const [recipes, setRecipes] = useState([]); // emtpy array for the recipes
+  const [search, setSearch] = useState(""); // empty string for the search
 
   //const [counter, setCounter] = useState(0);
 
@@ -27,16 +28,27 @@ const App = () => {
     console.log(data.hits);
   };
 
+  const updateSearch = (e) => {
+    setSearch(e.target.value);
+    console.log(search);
+  };
+
   return (
     <div className="App">
       <form className="search-form">
-        <input className="search-bar" type="text" />
+        <input
+          className="search-bar"
+          type="text"
+          value={search}
+          onChange={updateSearch}
+        />
         <button className="search-button" type="submit">
           Search
         </button>
       </form>
       {recipes.map((recipe) => (
         <Recipe
+          key={recipe.recipe.label} // this is making every prop unique,s o if we delete one recipe react doesn't have to re-render the rest of them
           title={recipe.recipe.label}
           calories={recipe.recipe.calories}
           image={recipe.recipe.image}
