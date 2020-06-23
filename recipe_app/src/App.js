@@ -8,7 +8,7 @@ const App = () => {
 
   const [recipes, setRecipes] = useState([]); // emtpy array for the recipes
   const [search, setSearch] = useState(""); // empty string for the search
-  const [query, setQuery] = useState("chicken"); // I want to fetch the data only after I've hit the search button - links to line 25
+  const [query, setQuery] = useState("banana"); // I want to fetch the data only after I've hit the search button - links to line 25
 
   //const [counter, setCounter] = useState(0);
 
