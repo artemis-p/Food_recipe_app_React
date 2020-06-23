@@ -19,12 +19,16 @@
 }
 
 .search-bar {
+  overflow: hidden;
+  border-radius: 25px;
   width: 50%;
   border: none;
   padding: 10px;
 }
 
 .search-button {
+  overflow: hidden;
+  border-radius: 25px;
   background: grey;
   border: none;
   padding: 10px 20px;
