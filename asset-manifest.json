@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Food_recipe_app_React/static/css/main.b1e394d0.chunk.css",
-    "main.js": "/Food_recipe_app_React/static/js/main.4655bbda.chunk.js",
-    "main.js.map": "/Food_recipe_app_React/static/js/main.4655bbda.chunk.js.map",
+    "main.css": "/Food_recipe_app_React/static/css/main.1a94a381.chunk.css",
+    "main.js": "/Food_recipe_app_React/static/js/main.4d3c828e.chunk.js",
+    "main.js.map": "/Food_recipe_app_React/static/js/main.4d3c828e.chunk.js.map",
     "runtime-main.js": "/Food_recipe_app_React/static/js/runtime-main.65999ed4.js",
     "runtime-main.js.map": "/Food_recipe_app_React/static/js/runtime-main.65999ed4.js.map",
     "static/js/2.df3c97c2.chunk.js": "/Food_recipe_app_React/static/js/2.df3c97c2.chunk.js",
     "static/js/2.df3c97c2.chunk.js.map": "/Food_recipe_app_React/static/js/2.df3c97c2.chunk.js.map",
     "index.html": "/Food_recipe_app_React/index.html",
-    "precache-manifest.217cec2779c42841d2d702f86e2a45ae.js": "/Food_recipe_app_React/precache-manifest.217cec2779c42841d2d702f86e2a45ae.js",
+    "precache-manifest.80dda72a8602b278c660ce1e0335c2f6.js": "/Food_recipe_app_React/precache-manifest.80dda72a8602b278c660ce1e0335c2f6.js",
     "service-worker.js": "/Food_recipe_app_React/service-worker.js",
-    "static/css/main.b1e394d0.chunk.css.map": "/Food_recipe_app_React/static/css/main.b1e394d0.chunk.css.map",
+    "static/css/main.1a94a381.chunk.css.map": "/Food_recipe_app_React/static/css/main.1a94a381.chunk.css.map",
     "static/js/2.df3c97c2.chunk.js.LICENSE.txt": "/Food_recipe_app_React/static/js/2.df3c97c2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.65999ed4.js",
     "static/js/2.df3c97c2.chunk.js",
-    "static/css/main.b1e394d0.chunk.css",
-    "static/js/main.4655bbda.chunk.js"
+    "static/css/main.1a94a381.chunk.css",
+    "static/js/main.4d3c828e.chunk.js"
   ]
 }
