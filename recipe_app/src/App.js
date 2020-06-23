@@ -57,7 +57,7 @@ const App = () => {
           <Recipe
             key={recipe.recipe.label} // this is making every prop unique,so if we delete one recipe react doesn't have to re-render the rest of them
             title={recipe.recipe.label}
-            calories={recipe.recipe.calories}
+            calories={Math.round(recipe.recipe.calories)}
             image={recipe.recipe.image}
             ingredients={recipe.recipe.ingredients} //in order to loop through the array going back to recipe.js and adding ingredients in there
             //healthLabels={recipe.recipe.healthLabels}
