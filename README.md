@@ -12,6 +12,6 @@ It's very simple! :) Just add the main ingredient you are looking recipes for (e
 - CSS
 - Edamam API
 
-You can find the tutorial here: https://www.youtube.com/watch?v=U9T6YkEDkMo
+You can find the tutorial I followed, here: https://www.youtube.com/watch?v=U9T6YkEDkMo
 
 
