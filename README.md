@@ -1,4 +1,5 @@
 # Food_recipe_app_React
+**Please note: The API is currently down, so searching for recipes will not render any results**<br><br>
 A food recipe app which allows users to search for different recipes. I built this project to further expand my knowledge in REACT and APIs. 
 
 ## Visit the web app
